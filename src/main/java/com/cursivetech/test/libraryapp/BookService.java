@@ -44,7 +44,7 @@ public class BookService {
 	
 	public void sortBooks() {
 		System.out.println("Inside Sort books");
-		Book book;
+		Book books;
 		Iterator booksIterator = this.books.iterator();
 		System.out.println("Before Sort books");
 		while(booksIterator.hasNext()) {
