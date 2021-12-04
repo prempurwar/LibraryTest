@@ -16,7 +16,7 @@ public class BookService {
 		
 		// Book 1
 		book = new Book();
-		book.setIsbn(123);
+		book.setReleasedate();
 		book.setTitle("Learn Java");
 		// Set Book date to 5th Nov 2020
 		// book.setReleaseDate();
@@ -24,7 +24,7 @@ public class BookService {
 		
 		// Book 2
 		book = new Book();
-		book.setIsbn(123);
+		book.setReleasedate();
 		book.setTitle("Learn Angular");
 		// Set Book date to 2rd oct 2012
 		// book.setReleaseDate();
@@ -32,7 +32,7 @@ public class BookService {
 		
 		// Book 3
 		book = new Book();
-		book.setIsbn(123);
+		book.setReleasedate();
 		book.setTitle("Learn Spring");
 		// Set Book date to 21st Nov 2021
 		// book.setReleaseDate();
@@ -49,7 +49,7 @@ public class BookService {
 		System.out.println("Before Sort books");
 		while(booksIterator.hasNext()) {
 			book = (Book) booksIterator.next();
-			System.out.println(book.getIsbn() + " -- " + book.getTitle() + " -- " + book.getReleaseDate());
+			System.out.println(book.getReleasedate() + " -- " + book.getTitle() + " -- " + book.getReleaseDate());
 		}
 		
 		// Sort Logic
@@ -60,7 +60,7 @@ public class BookService {
 		System.out.println("\n\n\nAfter Sort books");
 		while(booksIterator.hasNext()) {
 			book = (Book) booksIterator.next();
-			System.out.println(book.getIsbn() + " -- " + book.getTitle() + " -- " + book.getReleaseDate());
+			System.out.println(book.getReleasedate() + " -- " + book.getTitle() + " -- " + book.getReleaseDate());
 		}
 		
 	}
